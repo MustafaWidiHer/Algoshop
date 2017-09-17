@@ -1,6 +1,22 @@
-# Algoshop
-Seleksi Berbageek
-
+Skip to content
+ 
+Search…
+All gists
+GitHub
+New gist
+@mumus00 
+  Star 0
+  Fork 0
+@uyabuyab/Algoshop.java Secret
+Last active 4 days ago • 
+Report gist
+Embed  
+<script src="https://gist.github.com/uyab/8cc9e96d30ccba8b70cf0a3633ed33e1.js"></script>
+  Download ZIP
+ Code  Revisions 2
+Soal Java: Algoshop
+Raw
+ Algoshop.java
 /*
 * README
 * ======
@@ -143,93 +159,16 @@ public class App {
 
     static class Shop {
 
-        //PLACE YOUR CODE HERE
-        List<Book> list;
-        
-        public Shop(){
-            list = new ArrayList();
-        }
-        
-        public boolean bookIsAvailable(String book){
-            for(int i = 0; i < list.size(); i++){
-                if(list.get(i).title == book){
-                    return true;
-                }
-            }
-            return false;
-        }
-        
-        public Book bookGet(String book){
-            for(int i = 0; i < list.size(); i++){
-                if(list.get(i).title == book){
-                    return list.get(i);
-                }
-            }
-            return null;
-        }
-        
-        public void bookAdd(Book book){
-            list.add(book);
-        }
-        
-        public List<String> bookListByTitleContains(String book){
-            return
-        }
-        
-        public List<String> bookListByAuthor (String writer){
-            List<String> author = null;
-            for(Book book : list){
-                author.add(book.title);
-            }
-            return author;
-        }
+        PLACE YOUR CODE HERE
     }
 
     static class Book {
 
-        //PLACE YOUR CODE HERE
-        String title;
-        String writer;
-        
-        public Book(String title, String writer){
-            this.title = title;
-            this.writer = writer;
-        }
+        PLACE YOUR CODE HERE
     }
 
     static class Person {
 
-        //PLACE YOUR CODE HERE
-        private String nama;
-        Book[] list;
-        List<Book> bag;
-        
-        public Person (String nama){
-            this.nama = nama;
-        };
-        
-        public void setName(String nama){
-            this.nama = nama;
-        }
-        
-        public String getName(){
-            return nama;
-        }
-        
-        public void addToBag(Book book){
-            bag.add(book);
-        }
-        
-        public int countBag(){
-            int count = 0;
-            for (Book book : bag) {
-                count++;
-            }
-            return count;
-        }
-        
-        public void removeFromBag(String Judul){
-            
-        }
+        PLACE YOUR CODE HERE
     }
 }
