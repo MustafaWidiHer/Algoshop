@@ -1,5 +1,4 @@
-# Algoshop
-Seleksi Berbageek
+package javaapplication11;
 
 /*
 * README
@@ -147,12 +146,12 @@ public class App {
         List<Book> list;
         
         public Shop(){
-            list = new ArrayList();
+            list = new ArrayList<Book>();
         }
         
         public boolean bookIsAvailable(String book){
             for(int i = 0; i < list.size(); i++){
-                if(list.get(i).title == book){
+                if(list.get(i).title.toLowerCase() == book.toLowerCase()){
                     return true;
                 }
             }
@@ -172,18 +171,28 @@ public class App {
             list.add(book);
         }
         
-        public List<String> bookListByTitleContains(String book){
-            return
-        }
-        
-        public List<String> bookListByAuthor (String writer){
+       public List<String> bookListByTitleContains(String title){
             List<String> author = null;
             for(Book book : list){
-                author.add(book.title);
+                if(book.title.toLowerCase().contains(title.toLowerCase())){
+                   author.add(book.title);
+                }
             }
             return author;
+          } 
+        
+        
+        public List<String> bookListByAuthor (String writer){
+           List<String> author = null;
+            for(Book book : list){
+                if(book.writer.contains(writer)){
+                   author.add(book.title);
+                }
+            }
+            return author;
+          } 
         }
-    }
+   
 
     static class Book {
 
